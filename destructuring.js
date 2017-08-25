@@ -48,9 +48,19 @@ function greeting( obj ) {
 // ========================
 
 
-// Write a function called ingredients that will take in an object. This object will have 3 properties named carb, fat, and protein. The property values will be strings. Use object destructuring to save the property values to new variables. Push these new variables to an array and return the array.
+// Write a function called ingredients that will take in an object.
+//This object will have 3 properties named carb, fat, and protein.
+//The property values will be strings.
+//Use object destructuring to save the property values to new variables.
+//Push these new variables to an array and return the array.
 
   // CODE HERE
+  function ingredients(obj) {
+    var {carb, fat, protein} = obj;
+    var arr = [];
+    arr.push(carb, fat, protein);
+    return arr;
+  }
 
 
 // ========================
