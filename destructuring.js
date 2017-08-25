@@ -91,6 +91,17 @@ function largeNumbers({first, second, third}) {
 // ========================
 
 
-// Write a function called numberGroups that will take a destructured object as it's parameter. The object properties will be named a, b, and c and their values will be arrays of numbers. Find the longest array and return that array.
+// Write a function called numberGroups that will take a destructured object as it's parameter.
+//The object properties will be named a, b, and c and their values will be arrays of numbers.
+//Find the longest array and return that array.
 
   // CODE HERE
+  function numberGroups({a,b,c}) {
+    var {first, second, third} = {first: a, second: b, third: c};
+    var arr = [];
+    arr.push(first, second, third);
+    arr.sort(function orderLongToShort(a,b){
+      b.length-a.length;
+    });
+    return arr[0];
+  }
