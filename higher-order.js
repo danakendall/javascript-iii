@@ -91,7 +91,7 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Barry","price":30},{"owner":"Barry","price":129},{"owner":"Barry","price":38},
 {"owner":"Bob","price":133},{"owner":"Barry","price":109},{"owner":"Bob","price":115}]
 
-let bobsTotal = pruchases.reduce(function(sum, purchaseObj){
+let bobsTotal = purchases.reduce(function(sum, purchaseObj){
   if (purchaseObj['owner']==='Bob') {
     return sum + purchaseObj['price'];
   }
