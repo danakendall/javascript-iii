@@ -104,8 +104,8 @@ var cat = {
 
 // Code here
 
-var grumpyActivity= catFriends[0][activities][1];
-var fluffy2ndFriend= catFriends[1][name];
+var grumpyActivity= catFriends[0].activities[1];
+var fluffy2ndFriend= catFriends[1].name;
 
 
 
