@@ -95,8 +95,6 @@ let bobsTotal = purchases.filter(function(a){
   return a['owner']==='Bob';
 });
 
-return bobsTotal[0]['price'];
-
-// bobsTotal = bobsTotal.reduce(function(sum, curElement, curIndex, wholeArr){
-//     return sum + curIndex['price'];
-// });
+bobsTotal = bobsTotal.reduce(function(sum, curElement, curIndex, wholeArr){
+    return sum + curIndex['price'];
+});
