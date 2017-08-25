@@ -85,10 +85,6 @@ function removeDuplicates() {
 
 
 
-
-
-
-
 // === PROBLEM 3 ==========
 
 var cat = {
@@ -108,8 +104,8 @@ var cat = {
 
 // Code here
 
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity= catFriends[0].activities;
+var fluffy2ndFriend= catFriends[1].name;
 
 
 
