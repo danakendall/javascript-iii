@@ -96,5 +96,5 @@ let bobsTotal = purchases.filter(function(a){
 });
 
 bobsTotal = bobsTotal.reduce(function(sum, curElement, curIndex, wholeArr){
-    return sum + wholeArr[curIndex]['price'];
+    return sum + curIndex['price'];
 });
