@@ -9,7 +9,11 @@
 
 const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers  = mixedNumbers.filter(
+  function(a) {
+    return a%2===0;
+  }
+);
 
 // Below we have an array of prices.  We want to calculate their totals after
 // We want to use a map function on the prices to calculate a new array of
