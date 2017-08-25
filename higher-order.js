@@ -95,4 +95,5 @@ let bobsTotal = purchases.reduce(function(sum, purchaseObj){
   if (purchaseObj['owner']==='Bob') {
     return sum + purchaseObj['price'];
   }
+  else return sum;
 });
