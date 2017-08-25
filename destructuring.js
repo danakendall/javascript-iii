@@ -66,16 +66,27 @@ function greeting( obj ) {
 // ========================
 
 
-// Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration. See the example below:
+// Now we will use object destructuring as the function's parameter instead of
+//destructuring the object inside of the function declaration. See the example below:
 
 // function example( {one, two, three} ) {
 //   return one + two + three
 // }
 
-// Write a function called largeNumbers that will take a destructured object as it's parameter. The object properties will be named first, second, and third and their values will be numbers. Find the smallest number of the three and return that number.
+// Write a function called largeNumbers that will take a destructured object as it's parameter.
+//The object properties will be named first, second, and third and their values will be numbers.
+//Find the smallest number of the three and return that number.
 
   // CODE HERE
-
+function largeNumbers({first, second, third}) {
+  var {one, two, three} = {one: first, two: second, three: third};
+  var arr = [];
+  arr.push(one, two, three);
+  arr.sort(function compare(a,b){
+    return a-b;
+  });
+  return arr[0];
+}
 
 // ========================
 
