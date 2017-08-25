@@ -101,7 +101,7 @@ function largeNumbers({first, second, third}) {
     var arr = [];
     arr.push(first, second, third);
     arr.sort(function orderLongToShort(a,b){
-      b.length-a.length;
+      a.length-b.length;
     });
-    return arr[0];
+    return arr[arr.length-1];
   }
