@@ -75,7 +75,9 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
 {"price":48,"tax":0.13}]
 
-let ordersTotal // Your code here
+let ordersTotal = orders.map(function(a){
+  return a*(1+a['tax']);
+});
 
 // Below we have an array of purchases
 // We want to create a total for the purcahses, but only want to total Bob's
