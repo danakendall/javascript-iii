@@ -82,10 +82,23 @@ function double(obj) {
 // ========================
 
 
-// Write a function called secrets that will take in an object. Create an empty string variable. Write a for in loop that loops over the object. If the property name starts with an 'sh', concatenate the value to the string variable. By the end of the for in loop, you should have a sentence, return that sentence.
+// Write a function called secrets that will take in an object.
+//Create an empty string variable.
+//Write a for in loop that loops over the object.
+//If the property name starts with an 'sh', concatenate the value
+//to the string variable. By the end of the for in loop,
+//you should have a sentence, return that sentence.
 
 // CODE HERE
-
+function secretes(obj) {
+  var str='';
+  for (var key in obj) {
+    if (key[0]==='s' && key[1]==='h') {
+      str+=obj[key];
+    }
+  }
+  return str;
+}
 
 // ========================
 
