@@ -90,7 +90,7 @@ function double(obj) {
 //you should have a sentence, return that sentence.
 
 // CODE HERE
-function secretes(obj) {
+function secrets(obj) {
   var str='';
   for (var key in obj) {
     if (key[0]==='s' && key[1]==='h') {
