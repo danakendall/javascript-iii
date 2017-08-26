@@ -136,7 +136,8 @@ function removePassword(obj) {
 // ========================
 
 
-// Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
+// Write a for in loop that deletes every property from the object
+//deleteTheBigNumbers whose value is greater than 100.
 
 var deleteTheBigNumbers = {
   first: 10,
@@ -146,6 +147,11 @@ var deleteTheBigNumbers = {
 }
 
 // CODE HERE
+for (var key in deleteTheBigNumbers) {
+  if (deleteTheBigNumbers[key]>100) {
+    delete key;
+  }
+}
 
 
 // ========================
