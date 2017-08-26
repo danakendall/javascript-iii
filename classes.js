@@ -181,7 +181,11 @@ class Machine {
   }
 
   reboot() {
-    this.wear_and_tear_count -=10;
-    this.needs_reboot=false;
+    return function(){
+      this.wear_and_tear_count -=10;
+      this.needs_reboot=false;
+    }
   }
 }
+var myMach = new Machine;
+return myMach;
