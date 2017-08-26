@@ -80,8 +80,8 @@ let ordersTotal = orders.map(function(a){
 });
 
 // Below we have an array of purchases
-// We want to create a total for the purcahses, but only want to total Bob's
-// purchases
+// We want to create a total for the purcahses, but only want to
+//total Bob's purchases
 
 const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Bob","price":73},{"owner":"Barry","price":57},{"owner":"Barry","price":128},
@@ -100,6 +100,13 @@ let bobsPurchases = purchases.filter(function(a){
   return a['owner']==='Bob';
 });
 
-let bobsTotal = bobsPurchases.reduce(function(sum, curElement, curIndex, wholeArr){
-    return sum + curIndex['price'];
-});
+var bobsTotal;
+for (var i=0; i<bobsPurchases.length; i++) {
+  bobsTotal += bobsPurchases[i]['price'];
+}
+return bobsTotal;
+
+
+// let bobsTotal = bobsPurchases.reduce(function(sum, curElement, curIndex, wholeArr){
+//     return sum + curIndex['price'];
+// });
