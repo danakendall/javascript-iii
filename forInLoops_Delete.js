@@ -53,7 +53,14 @@ function showValues( obj ) {
 //that is great than 10 to 0. Return the updated object.
 
 // CODE HERE
-
+function greaterThan10(obj) {
+  for (var key in obj) {
+    if (obj[key]>10) {
+      obj[key] = 0;
+    }
+  }
+  return obj;
+}
 
 
 // ========================
