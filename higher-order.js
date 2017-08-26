@@ -91,22 +91,4 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Barry","price":30},{"owner":"Barry","price":129},{"owner":"Barry","price":38},
 {"owner":"Bob","price":133},{"owner":"Barry","price":109},{"owner":"Bob","price":115}]
 
-// var newArr = [];
-// for (var i=0; i<purchases.length; i++) {
-//
-// }
-
-let bobsPurchases = purchases.filter(function(a){
-  return a['owner']==='Bob';
-});
-
-var bobsTotal;
-for (var i=0; i<bobsPurchases.length; i++) {
-  bobsTotal += bobsPurchases[i]['price'];
-}
-return bobsTotal;
-
-
-// let bobsTotal = bobsPurchases.reduce(function(sum, curElement, curIndex, wholeArr){
-//     return sum + curIndex['price'];
-// });
+let bobsTotal // Your code here
