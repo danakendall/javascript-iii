@@ -162,7 +162,7 @@ It can :
 
 */
 
-class Mcahine {
+class Machine {
   constructor(){
     this.widgets_made_count = 0;
     this.waer_and_tear_count = 0;
