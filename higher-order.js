@@ -102,7 +102,3 @@ let bobsTotal = purchases.map(function(a) {
     return obj['price'];
   }
 });
-
-bobsTotal = bobsTotal.reduce(function(sum, value){
-  return sum + value;
-});
