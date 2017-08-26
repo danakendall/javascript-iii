@@ -91,10 +91,15 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Barry","price":30},{"owner":"Barry","price":129},{"owner":"Barry","price":38},
 {"owner":"Bob","price":133},{"owner":"Barry","price":109},{"owner":"Bob","price":115}]
 
-let bobsTotal = purchases.filter(function(a){
+// var newArr = [];
+// for (var i=0; i<purchases.length; i++) {
+//
+// }
+
+let bobsPurchases = purchases.filter(function(a){
   return a['owner']==='Bob';
 });
 
-bobsTotal = bobsTotal.reduce(function(sum, curElement, curIndex, wholeArr){
+let bobsTotal = bobsPurchases.reduce(function(sum, curElement, curIndex, wholeArr){
     return sum + curIndex['price'];
 });
