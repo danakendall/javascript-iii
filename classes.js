@@ -187,5 +187,3 @@ class Machine {
     }
   }
 }
-var myMach = new Machine;
-return myMach;
