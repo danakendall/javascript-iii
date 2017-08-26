@@ -16,13 +16,25 @@ Each employee has:
 
 Each employee can:
 - makeWidget
-    - This returns a string equal to the employees first name + last name + the word widget
+    - This returns a string equal to the employees
+    first name + last name + the word widget
     IE - "Dave Smith Widget"
 
-call your class Employee and receive all the data in the constructor in the order listed
+call your class Employee and receive all the data in the constructor
+in the order listed
 */
 
-
+class Employee {
+  constructor(first_name, last_name, email, age) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+  }
+  makeWidget(){
+    return this.first_name + ' ' + this.lastName + ' ' + 'Widget';
+  }
+}
 
 /*
 
