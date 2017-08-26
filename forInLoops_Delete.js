@@ -103,7 +103,10 @@ function secrets(obj) {
 // ========================
 
 
-// Sometimes it's needed to delete object properties. All you need is the word delete before a reference to the object property value. Uncomment the example below to see a for in loop deleting all the properties inside an object.
+// Sometimes it's needed to delete object properties.
+//All you need is the word delete before a reference to the object property value.
+//Uncomment the example below to see a for in loop deleting all the properties
+//inside an object.
 
 // var deleteAllThethings = {
 //   one: 1,
@@ -120,10 +123,14 @@ function secrets(obj) {
 // ========================
 
 
-// Write a function called removePassword that takes in an object. Delete the property password and return the object.
+// Write a function called removePassword that takes in an object.
+//Delete the property password and return the object.
 
 // CODE HERE
-
+function removePassword(obj) {
+  delete obj.password;
+  return obj;
+}
 
 
 // ========================
