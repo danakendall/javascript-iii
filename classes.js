@@ -32,7 +32,7 @@ class Employee {
     this.age = age;
   }
   makeWidget(){
-    return this.first_name + ' ' + this.lastName + ' ' + 'Widget';
+    return this.first_name + ' ' + this.last_name + ' ' + 'Widget';
   }
 }
 
