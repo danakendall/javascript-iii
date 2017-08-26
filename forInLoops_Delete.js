@@ -37,7 +37,7 @@
 
 function showValues( obj ) {
   // CODE HERE
-  var str;
+  var str ='';
   for (var key in obj) {
       str += obj[key];
   }
