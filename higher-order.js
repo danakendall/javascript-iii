@@ -97,8 +97,12 @@ let bobsTotal = purchases.reduce(function(sum, obj) {
   }
 });
 
-let bobsTotal = purchases.map(function(a) {
-  if (obj['owner']==='Bob') {
-    return obj['price'];
-  }
-});
+// let bobsTotal = purchases.map(function(a) {
+//   if (obj['owner']==='Bob') {
+//     return obj['price'];
+//   }
+// });
+//
+// bobsTotal = bobsTotal.reduce(function(sum, value){
+//   return sum + value;
+// });
