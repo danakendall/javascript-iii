@@ -175,7 +175,19 @@ function startsWithK(obj){
 // ========================
 
 
-// Write a function called hiddenTreasure that takes in an object. Write a for in loop that loops over this object. Each property will have a sentence as it's value. If the property value does not contain the word 'treasure', delete the property. Return the updated object.
+// Write a function called hiddenTreasure that takes in an object.
+//Write a for in loop that loops over this object.
+//Each property will have a sentence as it's value.
+//If the property value does not contain the word 'treasure', delete the property.
+//Return the updated object.
 // (hint: the method includes() may be of use...)
 
 // CODE HERE
+function hiddenTreasure(obj) {
+  for (var key in obj) {
+    if (!obj[key].includes('treasure')) {
+      delete obj[key];
+    }
+  }
+  return obj;
+}
