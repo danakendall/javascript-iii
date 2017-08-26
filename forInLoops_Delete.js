@@ -66,10 +66,17 @@ function greaterThan10(obj) {
 // ========================
 
 
-// Write a function called double that takes in an object. Write a for in loop that loops over the object and changes every value to be itself multipled by 2. Return the updated object.
+// Write a function called double that takes in an object.
+//Write a for in loop that loops over the object and changes
+//every value to be itself multipled by 2. Return the updated object.
 
 // CODE HERE
-
+function double(obj) {
+  for (var key in obj) {
+    obj[key] = obj[key]*2;
+  }
+  return obj;
+}
 
 
 // ========================
