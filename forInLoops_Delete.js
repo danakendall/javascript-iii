@@ -149,7 +149,7 @@ var deleteTheBigNumbers = {
 // CODE HERE
 for (var key in deleteTheBigNumbers) {
   if (deleteTheBigNumbers[key]>100) {
-    delete key;
+    delete deleteTheBigNumbers[key];
   }
 }
 
