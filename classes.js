@@ -161,3 +161,27 @@ It can :
       It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 
 */
+
+class Mcahine {
+  constructor(){
+    this.widgets_made_count = 0;
+    this.waer_and_tear_count = 0;
+    this.needs_reboot = false;
+  }
+
+  makeWidgets(num) {
+    this.widgets_made_count += num;
+    if (this.wear_and_tear_count%50===0) {
+      this.wear_and_tear_count+=1;
+    }
+  }
+
+  fixMachine() {
+    this.needs_reboot=true;
+  }
+
+  reboot() {
+    this.wear_and_tear_count -=10;
+    this.needs_reboot=false;
+  }
+}
