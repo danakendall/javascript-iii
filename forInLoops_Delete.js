@@ -38,8 +38,8 @@
 function showValues( obj ) {
   // CODE HERE
   var str;
-  for (var key in values) {
-      str += values[key];
+  for (var key in obj) {
+      str += obj[key];
   }
   return str;
 }
